@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');	/*Cool font from google*/
+.navi{
+	overflow: hidden;			/*This is so that we dont see the nested dropdown when the page is shortened*/
+	background-color: #E54B4B;
+}
+.navi a{						/*The links inside .navi*/
+	float: left;
+	display: block;
+	color: #EBEBD3;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Quicksand', sans-serif;
+}
+.navi .icon {					/*Hamburger Icon located at the bottom of class navi just before the logo*/
+	display: none;
+}
+.dropdown {						/*Dropdown div containing everything within Menu. This is not a link it is different from the a's, it contains links*/
+	float: left;
+	overflow: hidden;
+}
+.dropdown i{					/*The arrow next to Menu*/
+	padding-left: 6px;
+}
+.dropdown .dropbtn {			/*the actual button which once its hovered on displays the dropdown contents*/
+	font-size: 18px;    
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	background-color: #f28a8a;
+}
+.dropdown-content {				/*The div within dropdown that goes after the button, contains links*/
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 58px;/*CHANGE*/
+}
+.dropdown-content a {			/*The links within dropdown-content, they only show when hover is active*/
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.navi a:hover, .dropdown:hover .dropbtn {		/*hover attributes*/
+	background-color: #555;
+	color: white;
+}
+.dropdown-content a:hover {				/*hover attributes*/
+	background-color: #ddd;
+	color: black;
+}
+.dropdown:hover .dropdown-content {		/*when you hover on dropdown it displays the content in block*/
+	display: block;
+}
+.logo {									/*food tribe logo*/
+	float: right;
+	font-size: 1rem;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Quicksand', sans-serif;
+	color: #EBEBD3;
+	padding-top: 16px;
+	padding-right: 20px;
+}
+.logo span {							/*Differentiates the second word from the first in the logo*/
+	font-weight: 400;
+}
+.container{
+	
+}
+.content{								/*At the moment it only has .image1*/
+	position: relative;
+	background-color: white;
+	display: grid;
+	grid-template-areas:
+		'title title'
+		'starters starters'
+		'image1 image2'
+		'mains mains'
+		'image3 image4'
+		'desserts desserts'
+		'image5 image6'
+		'drinks drinks'
+		'image7 image8'
+		'deals deals'
+		'image9 image10';
+	padding: 50px;							/*Space that shows the background image*/
+	background-image: url("Pictures/background.jpg");		/*The opacity of this image has been modified using external software*/
+	text-align: center;
+}
+.content div{
+	background-color: white;
+}
+.title{
+	grid-area: title;
+}
+.content h3{
+	font-family: 'Quicksand', sans-serif;
+}
+.title h3{
+	font-weight: 700;
+	font-size: 1.5em;
+}
+.starters{
+	grid-area: starters;
+	border-top: 2px dashed #f28a8a;
+	border-bottom: 2px dashed #f28a8a;
+}
+.mains{
+	grid-area: mains;
+	border-top: 2px dashed #f28a8a;
+	border-bottom: 2px dashed #f28a8a;
+}
+.desserts{
+	grid-area: desserts;
+	border-top: 2px dashed #f28a8a;
+	border-bottom: 2px dashed #f28a8a;
+}
+.drinks{
+	grid-area: drinks;
+	border-top: 2px dashed #f28a8a;
+	border-bottom: 2px dashed #f28a8a;
+}
+.deals{
+	grid-area: deals;
+	border-top: 2px dashed #f28a8a;
+	border-bottom: 2px dashed #f28a8a;
+}
+.image1{
+	grid-area: image1;
+	padding-top: 5px;
+}
+.image2{
+	grid-area: image2;
+	padding-top: 5px;
+}
+.image3{
+	grid-area: image3;
+	padding-top: 5px;
+}
+.image4{
+	grid-area: image4;
+	padding-top: 5px;
+}
+.image5{
+	grid-area: image5;
+	padding-top: 5px;
+}
+.image6{
+	grid-area: image6;
+	padding-top: 5px;
+}
+.image7{
+	grid-area: image7;
+	padding-top: 5px;
+}
+.image8{
+	grid-area: image8;
+	padding-top: 5px;
+}
+.image9{
+	grid-area: image9;
+	padding-top: 5px;
+}
+.image10{
+	grid-area: image10;
+	padding-top: 5px;
+}
+.content img{
+	width: 450px;
+}
+#scrollupBtn{							/*Scroll up button attributes*/
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	z-index: 99;
+	border: solid 1px;
+	outline: none;
+	border-radius: 5px;
+	background-color: #E54B4B;
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+}
+#scrollupBtn:hover{
+	border: white;
+}
+.social{							/*Social Media div containing the icons*/
+	grid-area: social;
+	background-color: #f28a8a;
+	text-align: center;
+}
+.social img{						/*Icons images*/
+	height: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.social img:hover{
+	opacity: 0.8;
+}
+.footer{
+	grid-area: footer;
+	background-color: #E54B4B;
+	text-align: center;
+}
+.footer p{
+	color: white;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+@media screen and (max-width: 600px) {					/*The attributes here may change in order to achieve responsiveness*/
+	.navi a:not(:first-child), .dropdown .dropbtn {
+		display: none;
+	}
+	.navi a.icon {
+		float: right;
+		display: block;
+	}
+	.image1{
+	grid-area: image1;
+	text-align: center;
+	background-color: #EBEBD3;
+	margin-left: 0%;
+	margin-right: 0%;
+	width: 100%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.navi.responsive {position: relative;}				/*The class responsive is only present here, it is added to the class navi*/
+	.navi.responsive .icon {							/*When the screen is shortened, it basically changes the attributes of navi*/
+		position: absolute;								/*and displays the hamburger icon.*/
+		right: 0;
+		top: 0;
+	}
+	.navi.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.navi.responsive .dropdown {float: none;}
+	.navi.responsive .dropdown-content {position: relative;}
+	.navi.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.dropdown-content {				/*The div within dropdown that goes after the button, contains links*/
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 0px;/*CHANGE*/
+	}
+}

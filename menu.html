@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<title>Foodie Tribe</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/menu.css">
+			<link rel="icon" type="image/png" href="Pictures/icon.png"><!--Icon in title-->
+			<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<![endif]-->
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		</head>
+		<body>
+			<!--The first class navi is the uppermost class, the navigation panel/bar at the top-->
+			<div class="navi" id="myNavi">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<div class="dropdown">
+					<a class="dropbtn" href="menu.html">Menu<i class="fa fa-caret-down"></i> 
+					</a>
+					<div class="dropdown-content">
+						<a href="menu.html#starters">Starters</a>
+						<a href="menu.html#mains">Mains</a>
+						<a href="menu.html#desserts">Desserts</a>
+						<a href="menu.html#drinks">Drinks</a>
+						<a href="menu.html#deals">Deals</a>					
+					</div>				
+				</div> 
+				<a href="delivery.html">Delivery</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				<h1 class="logo">Foodie<span>Tribe</span></h1>
+			</div>
+			<!--The rest is the actual body of the page and the footer
+			IMAGE HOVER SHOWS DESCRIPTION OF IMAGE-->
+			<div class="container">
+				<div class="content">
+					<div class="title"><h3>Menu</h3></div>
+					<div class="starters" id="starters"><h3>Starters</h3></div>
+					<div class="image1"><img src="Pictures/picture2o.jpg"/></div>
+					<div class="image2"><img src="Pictures/picture3o.jpg"/></div>
+					<div class="mains" id="mains"><h3>Mains</h3></div>
+					<div class="image3"><img src="Pictures/picture4o.jpg"/></div>
+					<div class="image4"><img src="Pictures/picture5o.jpg"/></div>
+					<div class="desserts" id="desserts"><h3>Desserts</h3></div>
+					<div class="image5"><img src="Pictures/picture15o.jpg"/></div>
+					<div class="image6"><img src="Pictures/picture16o.jpg"/></div>
+					<div class="drinks" id="drinks"><h3>Drinks</h3></div>
+					<div class="image7"><img src="Pictures/picture13o.jpg"/></div>
+					<div class="image8"><img src="Pictures/picture14o.jpg"/></div>
+					<div class="deals" id="deals"><h3>Deals</h3></div>
+					<div class="image9"><img src="Pictures/picture10o.jpg"/></div>
+					<div class="image10"><img src="Pictures/picture11o.jpg"/></div>
+					<button onclick="topFunction()" id="scrollupBtn" title="Go to top">Top</button><!--The scroll up button-->
+				</div>
+				<div class="social"><!--This is part of the footer but its not included in the .footer-->
+					<a href="https://www.facebook.com" target="_blank"><img src="Pictures/facebook.png" alt="facebook"></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="Pictures/instagram.png" alt="instagram"></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="Pictures/twitter.png" alt="twitter"></a>
+					<a href="https://www.youtube.com" target="_blank"><img src="Pictures/youtube.png" alt="youtube"></a>
+				</div>
+				
+				<div class="footer"><!--The last thing at the bottom of the page-->
+					<p>Copyright &copy; 2018</p>
+				</div>
+			</div>
+			<script type="text/javascript" src="JS/script.js"></script>
+		</body>
+	</html>

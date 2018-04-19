@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Contact Page</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/contact.css">
+			<link rel="icon" type="image/png" href="Pictures/icon.png"><!--Icon in title-->
+			<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<![endif]-->
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->			
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4MhFxR4mHHkqc0tpLWJeM-vPpXh4bgO0&callback=Myhtml">
+						  //External source for extracting map by using key from Get Api Key
+			</script>		
+		</head>
+		<body>
+			<!--div class="topnav" id="myTopnav"-->
+			<div class="navi" id="myNavi">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<div class="dropdown">
+					<a class="dropbtn" href="menu.html">Menu<i class="fa fa-caret-down"></i>				
+					</a>
+						
+					<div class="dropdown-content">
+						<a href="menu.html#startes">Starters</a>
+						<a href="menu.html#mains">Mains</a>
+						<a href="menu.html#desserts">Desserts</a>
+						<a href="menu.html#drinks">Drinks</a>
+						<a href="menu.html#deals">Deals</a>					
+					</div>				
+				</div> 
+				<a href="delivery.html">Delivery</a>
+				
+				<a href="contact.html" class="active"  onclick="myAlert()">Contact</a>
+				
+							
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				<h1 class="logo">Foodie<span>Tribe</span></h1>
+			</div>
+			<!--Contact page Contents-->
+			<div class="container">
+				<div class="content">
+					<h1>Get in Touch</h1>
+					<div class="form">
+					  <form action="action">
+						<label for="fname">Name*</label><br/>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
+						<label for="email">Email*</label><br/>
+						<input type="text" id="email" name="lastname" placeholder="Your Email.."><br/>
+						<label for="message"><b>Message*</b></label><br/>
+						<textarea id="message" name="message" placeholder="Your Feedback.." style="height:100px"></textarea>
+						<br/>
+						
+						<input type="submit" value="Submit" onclick="sub()">
+						
+					  </form><br/>
+						<!--map-->
+						<div id="map"></div>
+							
+						<div class="icons">
+								<h2>Click on icons to enlarge details</h2>
+							<ul>
+								<li><a target="_blank" href="Pictures/i1.png">
+									  <img src="Pictures/i1.png" alt="website" style="width:70px">
+									</a></li>
+								<li><a target="_blank" href="Pictures/i2.png">
+									  <img src="Pictures/i2.png" alt="Phone" style="width:70px">
+									</a></li>
+								<li><a target="_blank" href="Pictures/i3.png">
+									  <img src="Pictures/i3.png" alt="Address" style="width:70px">
+									</a></li>
+							</ul>
+						</div>
+					</div>		
+					
+					
+					<button onclick="topFunction()" id="scrollupBtn" title="Go to top">Top</button>
+				</div>
+				<!--social network icons styling-->
+				<div class="social">
+					<a href="https://www.facebook.com" target="_blank"><img src="Pictures/facebook.png" alt="facebook"></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="Pictures/instagram.png" alt="instagram"></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="Pictures/twitter.png" alt="twitter"></a>
+					<a href="https://www.youtube.com" target="_blank"><img src="Pictures/youtube.png" alt="youtube"></a>
+				</div>
+				<!--Footer-->
+				<div class="footer">
+					<p>Copyright &copy; 2018</p>
+				</div>
+			</div><!--container End-->
+			<script type="text/javascript" src="JS/script.js"></script>
+		</body>
+	</html>

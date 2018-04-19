@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Gallery</title>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/gallery.css">
+			<link rel="icon" type="image/png" href="Pictures/icon.png"><!--Icon in title-->
+			<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<![endif]-->
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		</head>
+		<body>
+			<!--div class="topnav" id="myTopnav"-->
+			<div class="navi" id="myNavi">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html" class="active">Gallery</a>
+				<div class="dropdown">
+					<a class="dropbtn" href="menu.html">Menu<i class="fa fa-caret-down"></i>				
+					</a>	
+					<div class="dropdown-content">
+						<a href="menu.html#starters">Starters</a>
+						<a href="menu.html#mains">Mains</a>
+						<a href="menu.html#desserts">Desserts</a>
+						<a href="menu.html#drinks">Drinks</a>
+						<a href="menu.html#deals">Deals</a>					
+					</div>				
+				</div> 
+				<a href="delivery.html">Delivery</a>
+				
+				<a href="contact.html">Contact</a>
+				
+							
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				<h1 class="logo">Foodie<span>Tribe</span></h1>
+			</div>
+				<!--Gallery page Contents-->
+			<div class="container">
+				<div class="content">
+				  <h2 style="text-align:center">Gallery</h2>
+				  <h3 style="text-align:center">Click the thumbnail pics or arrows to see slide gallery</h3>
+				  <div class="mySlides">
+					<div class="numbertext">1 / 5</div>
+					<img src="Pictures/r1.jpeg" style="width:100%;height:450px;" alt="r1">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">2 / 5</div>
+					<img src="Pictures/r2.jpeg" style="width:100%;height:450px;" alt="r2">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">3 / 5</div>
+					<img src="Pictures/r3.jpeg" style="width:100%;height:450px;" alt="r3">
+				  </div>
+					
+				  <div class="mySlides">
+					<div class="numbertext">4 / 5</div>
+					<img src="Pictures/r4.jpeg" style="width:100%;height:450px;" alt="r4">
+				  </div>
+
+				  <div class="mySlides">
+					<div class="numbertext">5 / 5</div>
+					<img src="Pictures/r5.jpeg" style="width:100%;height:450px;" alt="r5">
+				  </div>
+					
+				 
+				  <a class="prev" onclick="plusSlides(-1)"><b>&lt;</b></a>
+				  <a class="next" onclick="plusSlides(1)"><b>&gt;</b></a>
+
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+
+				  <div class="row">
+					<div class="column">
+					  <img class="demo cursor" src="Pictures/r1.jpeg" style="width:100%;height:119px;" onclick="currentSlide(1)" alt="Front look">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="Pictures/r2.jpeg" style="width:100%;height:119px;" onclick="currentSlide(2)" alt="Sitting Area">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="Pictures/r3.jpeg" style="width:100%;height:120px;" onclick="currentSlide(3)" alt="Dining table">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="Pictures/r4.jpeg" style="width:100%;height:120px;" onclick="currentSlide(4)" alt="Live Station">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="Pictures/r5.jpeg" style="width:100%;height:120px;" onclick="currentSlide(5)" alt="Chef Kitchen">
+					</div>    
+				  </div>
+					<h2 style="text-align:center">Food Gallery</h2>
+					<div class="gallery1">
+						<div class="Image1">
+						 <a target="_blank" href="Pictures/f1.jpg">	
+							<img src="Pictures/f1.jpg" alt="Spring Rolls" width="200" height="200">
+						 </a>
+						  <div class="info">Spaghetti</div>
+						</div>
+
+						<div class="Image2">
+						  <a target="_blank" href="Pictures/f2.jpeg">
+							<img src="Pictures/f2.jpeg" alt="Fry Mushrooms" width="200" height="200">
+						  </a>
+						  <div class="info">Sushi Rolls</div>
+						</div>
+
+						<div class="Image3">
+						 <a target="_blank" href="Pictures/f3.jpg">
+							<img src="Pictures/f3.jpg" alt="Macroni" width="200" height="200">
+						 </a> 
+						  <div class="info">Creamy Soup</div>
+						</div>
+						<div class="Image4">
+						 <a target="_blank" href="Pictures/f4.jpg">
+						   <img src="Pictures/f4.jpg" alt="Sandwich" width="200" height="200">
+						  </a>
+						  <div class="info">Desserts</div>
+						</div>
+					</div>	
+					<div class="gallery2">
+						<div class="Image5">
+						  <a target="_blank" href="Pictures/f5.jpeg">
+							<img src="Pictures/f5.jpeg" alt="Fish and Chips" width="200" height="200">
+						  </a>
+						  <div class="info">Live BBQ</div>
+						</div>
+
+						<div class="Image6">
+						   <a target="_blank" href="Pictures/f6.jpeg">
+							<img src="Pictures/f6.jpeg" alt="Fry Prawns" width="200" height="200">
+						   </a>
+						  <div class="info">Fish and Chips</div>
+						</div>
+
+						<div class="Image7">
+						  <a target="_blank" href="Pictures/f7.jpg">
+							<img src="Pictures/f7.jpg" alt="Pizza" width="200" height="200">
+						  </a>
+						  <div class="info">Pizza</div>
+						</div>
+						<div class="Image8">
+					   <a target="_blank" href="Pictures/f8.jpeg">	
+						<img src="Pictures/f8.jpeg" alt="Juicy Burger" width="200" height="200">
+					   </a>
+						  <div class="info">Juicy Burger</div>
+						</div>
+					</div>	
+					<button onclick="topFunction()" id="scrollupBtn" title="Go to top">Top</button>
+				</div>
+					<!--social network icons styling-->
+				<div class="social">
+					<a href="https://www.facebook.com" target="_blank"><img src="Pictures/facebook.png" alt="facebook"></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="Pictures/instagram.png" alt="instagram"></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="Pictures/twitter.png" alt="twitter"></a>
+					<a href="https://www.youtube.com" target="_blank"><img src="Pictures/youtube.png" alt="youtube"></a>
+				</div>
+					<!--Footer-->
+				<div class="footer">
+					<p>Copyright &copy; 2018</p>
+				</div>
+			</div><!--container End-->
+			<script type="text/javascript" src="JS/script.js"></script>
+		</body>
+	</html>

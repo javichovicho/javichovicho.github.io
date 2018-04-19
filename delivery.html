@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<title>Foodie Tribe</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/delivery.css">
+			<link rel="icon" type="image/png" href="Pictures/icon.png"><!--Icon in title-->
+			<!--[if lt IE 9]>
+			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+			<![endif]-->
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		</head>
+		<body>
+			<!--The first class navi is the uppermost class, the navigation panel/bar at the top-->
+			<div class="navi" id="myNavi">
+				<a href="index.html">Home</a>
+				<a href="#about">About</a>
+				<a href="gallery.html">Gallery</a>
+				<div class="dropdown">
+					<a class="dropbtn" href="menu.html">Menu<i class="fa fa-caret-down"></i> 
+					</a>
+					<div class="dropdown-content">
+						<a href="menu.html#starters">Starters</a>
+						<a href="menu.html#mains">Mains</a>
+						<a href="menu.html#desserts">Desserts</a>
+						<a href="menu.html#drinks">Drinks</a>
+						<a href="menu.html#deals">Deals</a>					
+					</div>				
+				</div> 
+				<a href="delivery.html" class="active">Delivery</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				<h1 class="logo">Foodie<span>Tribe</span></h1>
+			</div>
+			<!--The rest is the actual body of the page and the footer-->
+			<div class="container">
+				<div class="content">
+					<div class="form">
+						<form>
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your first name">
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name">
+							<label for="address">Email Address</label>
+							<input type="text" id="email" name="email" placeholder="Your email address">
+							<label for="address">Address</label>
+							<input type="text" id="address" name="address" placeholder="Enter your Eircode or full address">
+							<label for="country">Country</label>
+							<select id="country" name="country">
+							  <option value="Ireland">Ireland</option>
+							  <option value="United Kingdom">United Kingdom</option>
+							  <option value="Australia">Australia</option>
+							</select>
+							<input class="button1" type="submit" value="Delivery" onclick="myDelivery()">
+							<input class="button2" type="submit" value="Takeaway" onclick="myTakeaway()">
+						</form>
+					</div>
+					<button onclick="topFunction()" id="scrollupBtn" title="Go to top">Top</button><!--The scroll up button-->
+				</div>
+				<div class="social"><!--This is part of the footer but its not included in the .footer-->
+					<a href="https://www.facebook.com" target="_blank"><img src="Pictures/facebook.png" alt="facebook"></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="Pictures/instagram.png" alt="instagram"></a>
+					<a href="https://www.twitter.com" target="_blank"><img src="Pictures/twitter.png" alt="twitter"></a>
+					<a href="https://www.youtube.com" target="_blank"><img src="Pictures/youtube.png" alt="youtube"></a>
+				</div>
+				
+				<div class="footer"><!--The last thing at the bottom of the page-->
+					<p>Copyright &copy; 2018</p>
+				</div>
+			</div>
+			<script src="JS/script.js"></script>
+		</body>
+	</html>
