@@ -238,6 +238,31 @@
 	margin-right: 0%;
 	width: 100%;
 	}
+	.content{								/*At the moment it only has .image1*/
+	position: relative;
+	background-color: white;
+	display: grid;
+	grid-template-areas:
+		'title'
+		'starters'
+		'image1'
+		'image2'
+		'mains'
+		'image3'
+		'image4'
+		'desserts'
+		'image5'
+		'image6'
+		'drinks'
+		'image7' 
+		'image8'
+		'deals'
+		'image9'
+		'image10';
+	padding: 30px;							/*Space that shows the background image*/
+	background-image: url("Pictures/background.jpg");		/*The opacity of this image has been modified using external software*/
+	text-align: center;
+	}
 }
 @media screen and (max-width: 600px) {
 	.navi.responsive {position: relative;}				/*The class responsive is only present here, it is added to the class navi*/

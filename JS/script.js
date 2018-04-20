@@ -100,9 +100,3 @@ function sub() {
 	myWindow=window.open("");//for showing message seperate window
 	myWindow.document.write("<h3>Your feedback is submitted.<br/>Thank you..</h3>");
 }
-
-// Wait for window load
-$(window).load(function() {
-	// Animate loader off screen
-	$(".se-pre-con").fadeOut("slow");;
-});
