@@ -19,7 +19,7 @@ carousel();
 
 function carousel() {
 	var i;
-	var x = document.getElementsByClassName("mySlides");
+	var x = document.getElementsByClassName("mySlides1");
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";  
 	}
@@ -32,7 +32,7 @@ function carousel() {
 }
 /*The code below is for the hamburger icon, so that once its active and you click it it displays the dropdown*/
 function myFunction() {
-	var x = document.getElementById("myNavi1");
+	var x = document.getElementById("myNavi");
 	if (x.className === "navi") {
 		x.className += " responsive";
 	} else {
