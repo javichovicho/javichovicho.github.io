@@ -32,7 +32,7 @@ function carousel() {
 }
 /*The code below is for the hamburger icon, so that once its active and you click it it displays the dropdown*/
 function myFunction() {
-	var x = document.getElementById("myNavi");
+	var x = document.getElementById("myNavi1");
 	if (x.className === "navi") {
 		x.className += " responsive";
 	} else {
